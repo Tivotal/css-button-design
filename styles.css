@@ -1,0 +1,69 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #212121;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #5bfcc4, #f593e4, #71a4f0);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: inset 0px 0px 5px #ffffffa9, inset 0px 35px 30px #000,
+    0px 5px 10px #000000cc;
+  text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:active {
+  box-shadow: inset 0px 0px 5px #ffffffa9, inset 0px 35px 30px #000;
+  margin-top: 3px;
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: conic-gradient(
+    #00000000 80deg,
+    #40baf7,
+    #f34ad7,
+    #5bfcc4,
+    #00000000 280deg
+  );
+  z-index: -1;
+  border-radius: 12px;
+  filter: blur(0);
+  transition: 0.3s;
+}
+
+.btn:hover:before {
+  filter: blur(15px);
+}
+
+.btn:active:before {
+  filter: blur(5px);
+  transform: translateY(1px);
+}
