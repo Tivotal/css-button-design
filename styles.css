@@ -24,21 +24,24 @@ body {
   align-items: center;
   gap: 5px;
   padding: 15px 30px;
-  background: linear-gradient(90deg, #5bfcc4, #f593e4, #71a4f0);
+  background: linear-gradient(90deg, 
+             #5bfcc4, #f593e4, #71a4f0);
   outline: none;
   border: none;
   border-radius: 12px;
   color: #fff;
   font-size: 18px;
-  box-shadow: inset 0px 0px 5px #ffffffa9, inset 0px 35px 30px #000,
-    0px 5px 10px #000000cc;
+  box-shadow: inset 0px 0px 5px #ffffffa9, 
+              inset 0px 35px 30px #000,
+              0px 5px 10px #000000cc;
   text-shadow: 1px 1px 1px #000;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .btn:active {
-  box-shadow: inset 0px 0px 5px #ffffffa9, inset 0px 35px 30px #000;
+  box-shadow: inset 0px 0px 5px #ffffffa9,
+              inset 0px 35px 30px #000;
   margin-top: 3px;
 }
 
